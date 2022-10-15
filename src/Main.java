@@ -2,15 +2,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        float x,y;
+        double x;
+        System.out.println("digte a medida do lado do quadrado : ");
+        x = sc.nextDouble();
 
-        System.out.println("Quantas horas voce trablha por semana?: ");
-        x = sc.nextFloat();
-        System.out.println("Quanto voce recebe por hora?: ");
-        y = sc.nextFloat();
+        Double y =(Math.pow(x, 2) * 2 );
+        Double z = x * 2;
 
-        float z = (x * y)*4;
-
-        System.out.println("O seu salario e de : " + z);
+        System.out.println(" A area do quadrado e: " + z);
     }
 }
